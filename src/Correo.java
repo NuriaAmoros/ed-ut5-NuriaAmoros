@@ -9,7 +9,7 @@ public class Correo {
         boolean esValido;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Introduce una dirección de correo electrónico= ");
+        System.out.print("Introduce una dirección de correo electrónico: ");
         String correo = scanner.nextLine();
 
         // Expresión regular para validar el correo de alumno
