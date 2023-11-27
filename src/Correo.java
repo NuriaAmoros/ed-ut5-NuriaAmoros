@@ -6,17 +6,17 @@ public class Correo {
 
 
     public static void main(String[] args) {
-
+        boolean esValido;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Introduce una dirección de correo electrónico= ");
+        System.out.print("Introduce una dirección de correo electrónico: ");
         String correo = scanner.nextLine();
 
         // Expresión regular para validar el correo de alumno
         String regex = "[\\w.]+@alu\\.gva\\.es";
 
         // Comprobar si el correo cumple con la expresión regular
-        boolean esValido = Pattern.matches(regex, correo);
+         esValido = Pattern.matches(regex, correo);
 
         // Mostrar el resultado
         if (esValido) {
